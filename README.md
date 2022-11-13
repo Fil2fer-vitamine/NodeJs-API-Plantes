@@ -78,7 +78,6 @@ Installation of dev dependencies :
 npm i -D typescript @types/express ts-node nodemon @types/cors @types/node
 ```
 
-
 ## Create database
 
 Dans un shell PSQL :
@@ -101,3 +100,17 @@ On insère quelques données de test :
 ```sql
 INSERT INTO book (title) VALUES ('The Hobbit'), ('The Lord of the Rings');
 ```
+
+Création des fichiers dans src:
+
+- PlantesRoutes.ts dans routes -- liaison entre index.ts et PlantesRoutes.ts
+- PlantesController.ts dans controllers -- liaison entre PlantesRoute.ts et PlantesController.ts
+- PlantesServices.ts dans services -- liaison entre PlantesServices.ts et PlantesController.ts
+- Création de la data-source.ts dans src pour y configurer la base de données ... la data-source fait appel à ORM
+  --> installation de typeorm avec la ligne de code donnée par jérémy pour le Vscode
+  READ.md - A-Z_node-api-book-main : npm i express cors typeorm reflect-metadata pg
+  --> installation de dev dependencies avec la ligne de code donnée par jérémy pour le Vscode
+  READ.md - npm i -D typescript @types/express ts-node nodemon @types/cors @types/node
+
+- installation de typeorm et reflect-metadata : npm install typeorm reflect-metadata --save
+- installation de @types/node dans les Dependancies : npm install @types/node --save-dev
