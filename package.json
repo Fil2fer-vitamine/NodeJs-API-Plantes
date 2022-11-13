@@ -4,7 +4,7 @@
   "description": "To start you have to type this line to install dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
