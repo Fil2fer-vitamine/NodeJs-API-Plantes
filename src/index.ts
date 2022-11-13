@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import planteRouter from "./routes/PlanteRoutes";
 
+const app = express(); // utilisation des possibilités de express.
+
 const port = 8080;
 
-const app = express();
-app.use(express.json); //On paramètre la possibilité de récupérer des infos dans un body en format .json
+app.use(express.json()); //On paramètre la possibilité de récupérer des infos dans un body en format .json
 app.use(
   cors({
     origin: "*", // 'http://localhost:3000'
@@ -15,11 +16,11 @@ app.use(
 // On paramètre pour notre API pour qu'on puisse faire des requêtes dessus.
 
 // Création d'un raccourci d'URL
-app.use('/api/plantes', planteRouter);
+app.use("/api/plantes", planteRouter);
 
 // Raccordement de l'API sur un port :
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log(
-    `L'api est en route sur l'adresse localhost:${port} - En cours d'utilisation !!!`
+    `L'api est en route sur l'adresse http://localhost:${port} - En cours d'utilisation !!!`
   );
 });
