@@ -114,3 +114,20 @@ Création des fichiers dans src:
 
 - installation de typeorm et reflect-metadata : npm install typeorm reflect-metadata --save
 - installation de @types/node dans les Dependancies : npm install @types/node --save-dev
+
+---
+
+Pour que le README;md soit à jour, les lignes de codes à retenir sont :
+
+- npm i express cors typeorm reflect-metadata pg
+- npm i -D typescript @types/express ts-node nodemon @types/cors @types/node
+
+---
+
+Nous suivons les recommandations de la page https://typeorm.io/
+TypeScript configuration
+Also, make sure you are using TypeScript version 4.5 or higher, and you have enabled the following settings in tsconfig.json:
+"emitDecoratorMetadata": true,
+"experimentalDecorators": true,
+
+---
