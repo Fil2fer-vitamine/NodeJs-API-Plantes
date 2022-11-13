@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import PlanteService from "../PlanteServices/PlanteServices";
+import PlanteService from "../services/PlanteServices";
 
 // Création d'une classe
 class PlanteController {
