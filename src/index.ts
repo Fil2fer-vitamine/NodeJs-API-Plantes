@@ -16,6 +16,6 @@ app.use(
 // Raccordement de l'API sur un port :
 application.listen(8080, () => {
   console.log(
-    `L'api est en route sur l'adresse localhost:${port} - En cours d'utilisation ...`
+    `L'api est en route sur l'adresse localhost:${port} - En cours d'utilisation !!!`
   );
 });
