@@ -125,9 +125,30 @@ Pour que le README;md soit à jour, les lignes de codes à retenir sont :
 ---
 
 Nous suivons les recommandations de la page https://typeorm.io/
+
 TypeScript configuration
 Also, make sure you are using TypeScript version 4.5 or higher, and you have enabled the following settings in tsconfig.json:
 "emitDecoratorMetadata": true,
 "experimentalDecorators": true,
+
+---
+
+Poursuite de la recommandation de la page https://typeorm.io/
+
+- Création de la page data-source.ts que l'on doit mettre dans le fichier src.
+- Copie du code suivant dedans :
+  export const AppDataSource = new DataSource({
+  type: "postgres",
+  host: "localhost",
+  port: 5432,
+  username: "test",
+  password: "test",
+  database: "test",
+  synchronize: true,
+  logging: true,
+  entities: [Post, Category],
+  subscribers: [],
+  migrations: [],
+  })
 
 ---
