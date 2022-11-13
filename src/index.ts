@@ -6,7 +6,7 @@ const app = express(); // utilisation des possibilités de express.
 
 const port = 8080;
 
-app.use(express.json()); //On paramètre la possibilité de récupérer des infos dans un body en format .json
+app.use(express.json()); //On paramètre la possibilité de récupérer des infos dans un body en format .json      -->Fix bug non liaison avec Postman : mise des () dans (express.json) <--
 app.use(
   cors({
     origin: "*", // 'http://localhost:3000'
