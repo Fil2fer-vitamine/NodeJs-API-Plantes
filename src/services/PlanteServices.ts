@@ -24,6 +24,27 @@ class PlanteService {
     console.log("PlanteServices - GET / - en fonction sur localhost:8080");
     return this.listPlantes;
   }
+  
+  async getOnePlanteById(): Promise<Plante> {
+    console.log("PlanteServices - GET / - en fonction sur localhost:8080");
+    return this.listPlantes;
+  }
+  
+  async postOnePlante(): Promise<Plante> {
+    console.log("PlanteServices - POST / - en fonction sur localhost:8080");
+    return this.listPlantes;
+  }
+  
+  async putOnePlanteById(): Promise<Plante> {
+    console.log("PlanteServices - PUT / - en fonction sur localhost:8080");
+    return this.listPlantes;
+  }
+  
+  async deleteOnePlanteById(): Promise<Plante> {
+    console.log("PlanteServices - DELETE / - en fonction sur localhost:8080");
+    return this.listPlantes;
+  }
+  
 }
 export default PlanteService;
 
